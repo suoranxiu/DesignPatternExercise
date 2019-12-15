@@ -7,6 +7,11 @@ import java.lang.reflect.InvocationTargetException;
 public class Test {
     public static void main(String[] args) throws IOException, ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
 
+        System.out.println("main Thread: "+ThreadLocalInstance.getInstance());
+        System.out.println("main Thread: "+ThreadLocalInstance.getInstance());
+        System.out.println("main Thread: "+ThreadLocalInstance.getInstance());
+        System.out.println("main Thread: "+ThreadLocalInstance.getInstance());
+        System.out.println("main Thread: "+ThreadLocalInstance.getInstance());
         Thread t1 = new Thread(new T());
         Thread t2 = new Thread(new T());
         Thread t3 = new Thread(new T());
